@@ -1,0 +1,7 @@
+<ul class="Meo">
+  <li class="ConMeo" *ngFor = "let x of protected">
+    <a class="anh"><img [src]="x.anh"></a>
+    <a class="ten">{{x.ten}}</a>
+    <p><button (click) = "delete(x.ten)">delete</button></p>
+  </li>
+</ul>
